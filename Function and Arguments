@@ -1,0 +1,13 @@
+//here is a function where we don't know how many arguments there will be
+//so we use `arguments` to refer to passed arguments
+function sum(){
+	var result=0;
+	var i=0;
+	var len=arguments.length; //arguments =refer to local function
+	while (i<len){
+		result+=arguments[i]; 
+		i++;
+		}
+	return result;
+	}
+console.log(sum(1,1,2,3,4,6));
