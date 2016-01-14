@@ -1,0 +1,9 @@
+myObject["firstProperty"]="Derek";
+myObject.secondProperty="Sievers";
+myObject.thirdProperty=22000000;
+myObject;
+var property;
+for (property in myObject){
+console.log("Name: "+property);
+console.log("Value: "+myObject[property]);
+}
